@@ -1,6 +1,2 @@
-packages:
-  - .
-  - react-native-botsort
-
 onlyBuiltDependencies:
   - unrs-resolver
