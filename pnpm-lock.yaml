@@ -75,8 +75,8 @@ importers:
         specifier: 0.86.3
         version: 0.86.3(@babel/core@7.29.7)(@react-native/metro-config@0.86.3(@babel/core@7.29.7))(@types/react@19.2.18)(react@19.2.3)
       react-native-botsort:
-        specifier: ^0.1.1
-        version: 0.1.1(978a803d3e515a4ef366220ac2ee05bb)
+        specifier: ^0.1.6
+        version: 0.1.6(978a803d3e515a4ef366220ac2ee05bb)
       react-native-fast-tflite:
         specifier: ^3.0.1
         version: 3.0.1(react-native-nitro-modules@0.37.1(react-native@0.86.3(@babel/core@7.29.7)(@react-native/metro-config@0.86.3(@babel/core@7.29.7))(@types/react@19.2.18)(react@19.2.3))(react@19.2.3))(react-native@0.86.3(@babel/core@7.29.7)(@react-native/metro-config@0.86.3(@babel/core@7.29.7))(@types/react@19.2.18)(react@19.2.3))(react@19.2.3)
@@ -3454,8 +3454,8 @@ packages:
   react-is@19.3.0:
     resolution: {integrity: sha512-UpMYezM4v5/18F28aC66AEsjXIgE02kyEMH6yLdgLXu/UTfa1Ntwck/nNLrbqJsEXW7gPb0coNO9FQse9WTovA==}
 
-  react-native-botsort@0.1.1:
-    resolution: {integrity: sha512-Ce45L97jTcO+aT09aQVBY/02dr/PcvxEtxGz2EZ+/h6rT/mUvlfJXmc+JL++JCDSQK9q2j5S31FEtI02qU8jxw==}
+  react-native-botsort@0.1.6:
+    resolution: {integrity: sha512-TK0RYofM4nxGAltdlXbDXAu/LQ2FBst/Dd9iFLN1WjmQrzraaDhdekZO+dglHioJmzzw1VsSmt1RnRtklriIyg==}
     peerDependencies:
       react: '*'
       react-native: '*'
@@ -8338,7 +8338,7 @@ snapshots:
 
   react-is@19.3.0: {}
 
-  react-native-botsort@0.1.1(978a803d3e515a4ef366220ac2ee05bb):
+  react-native-botsort@0.1.6(978a803d3e515a4ef366220ac2ee05bb):
     dependencies:
       react: 19.2.3
       react-native: 0.86.3(@babel/core@7.29.7)(@react-native/metro-config@0.86.3(@babel/core@7.29.7))(@types/react@19.2.18)(react@19.2.3)
