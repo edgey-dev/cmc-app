@@ -25,8 +25,7 @@
     "react": "19.2.3",
     "react-dom": "19.2.3",
     "react-native": "0.86.3",
-    "react-native-botsort": "^0.1.6",
-    "react-native-css-interop": "^0.2.7",
+    "react-native-botsort": "^0.1.7",
     "react-native-fast-tflite": "^3.0.1",
     "react-native-gesture-handler": "~2.32.0",
     "react-native-reanimated": "4.5.1",
@@ -54,5 +53,5 @@
     "lint": "expo lint"
   },
   "private": true,
-  "packageManager": "pnpm@10.18.2"
+  "packageManager": "yarn@1.22.22"
 }
