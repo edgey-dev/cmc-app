@@ -23,7 +23,7 @@ export default function RootLayout() {
       <ThemedView style={styles.permissionContainer}>
         <Image
           source={require("@/assets/images/icon_opaque.png")}
-          className="size-24"
+          style={styles.logo}
         />
         <ThemedText style={styles.text}>
           Camera permission is required
@@ -53,5 +53,9 @@ const styles = StyleSheet.create({
   text: { fontSize: 18, marginBottom: 20 },
   container: {
     flex: 1,
+  },
+  logo: {
+    width: 240,
+    height: 240,
   },
 });
