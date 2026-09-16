@@ -5908,6 +5908,11 @@ react-native-vision-camera-resizer@^5.2.3:
   resolved "https://registry.yarnpkg.com/react-native-vision-camera-resizer/-/react-native-vision-camera-resizer-5.2.3.tgz#87a69e48ce2db50976499cb55e779d64b794235d"
   integrity sha512-L5+MDvhHxNReHfxhHvOiXGVO8OK24kMrcBKtcJGqPFLc+bNctl99BFZCZGGBzIQYLMFbon7440Qj4Tke86vMiA==
 
+react-native-vision-camera-skia@^5.2.3:
+  version "5.2.3"
+  resolved "https://registry.yarnpkg.com/react-native-vision-camera-skia/-/react-native-vision-camera-skia-5.2.3.tgz#a73d236ea19207c59055e07eaf2da05db5327353"
+  integrity sha512-uog1ZvG7vmcWspg4MuxSMKk/qkFC5tRBTa9nygKIg2rM+vrbbnJt/XBYcuJIoCzx+RCiPRkQP/ltB5Le4GfjnQ==
+
 react-native-vision-camera-worklets@^5.2.3:
   version "5.2.3"
   resolved "https://registry.yarnpkg.com/react-native-vision-camera-worklets/-/react-native-vision-camera-worklets-5.2.3.tgz#8bdb51b8cf51d004effb8704daf4e91cd7a26c27"
