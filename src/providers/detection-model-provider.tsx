@@ -9,8 +9,9 @@ export const DetectionModelContext =
 
 const DetectionModelProvider = (props: Props) => {
   const model = useTFLiteModel({
-    modelSource: require("@/assets/models/car_detector_int8.tflite"),
+    modelSource: require("@/assets/models/car_detector.tflite"),
     modelMetadata: { quantization: null, normalised: true, classes: ["car"] },
+    useGpu: true,
   });
   return (
     <DetectionModelContext value={model}>
