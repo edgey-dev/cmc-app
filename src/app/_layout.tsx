@@ -1,14 +1,15 @@
 import "@/global.css";
 import { ThemedText } from "@/components/themed-text";
 import { ThemedView } from "@/components/themed-view";
-import ClassificationModelProvider from "@/providers/classification-model-provider";
-import DetectionModelProvider from "@/providers/detection-model-provider";
 import { DarkTheme, DefaultTheme, ThemeProvider } from "expo-router";
 import { useEffect } from "react";
 import { Button, StyleSheet, useColorScheme } from "react-native";
 import { useCameraPermission } from "react-native-vision-camera";
 import { Image } from "expo-image";
 import Index from ".";
+import * as SplashScreen from "expo-splash-screen";
+
+SplashScreen.preventAutoHideAsync();
 
 export default function RootLayout() {
   const colorScheme = useColorScheme();
@@ -35,11 +36,7 @@ export default function RootLayout() {
 
   return (
     <ThemeProvider value={colorScheme === "dark" ? DarkTheme : DefaultTheme}>
-      {/* <ClassificationModelProvider> */}
-      <DetectionModelProvider>
-        <Index />
-      </DetectionModelProvider>
-      {/* </ClassificationModelProvider> */}
+      <Index />
     </ThemeProvider>
   );
 }
@@ -57,5 +54,6 @@ const styles = StyleSheet.create({
   logo: {
     width: 240,
     height: 240,
+    borderRadius: 4,
   },
 });

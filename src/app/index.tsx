@@ -4,7 +4,6 @@ import { ThemedView } from "@/components/themed-view";
 import useCameraDevice from "@/hooks/use-camera-device";
 import useDetectionnModel from "@/hooks/use-detection-model";
 // import useClassificationModel from "@/hooks/use-classification-model";
-// import useDetectionnModel from "@/hooks/use-detection-model(deprecated)";
 import { PaintStyle, Skia } from "@shopify/react-native-skia";
 import * as SplashScreen from "expo-splash-screen";
 import { useEffect } from "react";
@@ -14,14 +13,10 @@ import { StyleSheet } from "react-native";
 import { BoundingBox } from "react-native-botsort";
 import { SkiaCamera } from "react-native-vision-camera-skia";
 
-SplashScreen.preventAutoHideAsync();
-
 const paint = Skia.Paint();
 paint.setStyle(PaintStyle.Stroke);
 paint.setStrokeWidth(3);
 paint.setColor(Skia.Color("red"));
-
-const MODEL_INPUT_IMAGE_SIZE = 320;
 
 const Index = () => {
   const [device, setCameraPosition] = useCameraDevice("back");
@@ -69,6 +64,7 @@ const Index = () => {
             const scaleY =
               frame.height / (detectionModel.inputShape?.[2] ?? 320);
             const output = detectionModel.runInference(frame, false);
+            if (!output) return;
           }
 
           render(({ frameTexture, canvas }) => {
